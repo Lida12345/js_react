@@ -309,6 +309,93 @@ const jonh = Object.create(soldier);
 
 jonh.sayHello();
 
+// Урок 26
+
+"use strict";
+
+// To String
+
+//  способ 1)
+//console.log(typeof(String(null)));
+ // console.log(String(null));
+ console.log(typeof(String(4)));
+
+ // способ 2) конкотенация
+
+ console.log(typeof(5 + ''));
+
+ const num = 5;
+
+ console.log("https://vk.com/catalog/" + num);
+
+ const fontSize = 26 + 'px';
+
+ //To Number
+
+ // способ 1)
+ console.log(typeof(Number('4')));
+
+ // 2) Унарный плюс
+ console.log(typeof(+'5'));
+
+ // 3)
+ console.log(typeof(parseInt("15px", 10)));
+
+ let answ = +prompt("Hello", "");
+
+ // To boolean
+
+// 0, '', null, undefined, NaN;
+// 1)
+
+let switcher = null;
+
+if (switcher) {
+    console.log('Working...');
+}
+
+switcher = 1;
+
+if (switcher) {
+    console.log('Working...');
+}
+
+// 2)
+console.log(typeof(Boolean('4')));
+
+// 3)
+console.log(typeof(!!"44444"));
+
+//Урок 27
+
+/* Какое будет выведено значение: let x = 5; alert( x++ ); ?
+
+
+
+Чему равно такое выражение: [ ] + false - null + true ?
+
+Что выведет этот код: let y = 1; let x = y = 2; alert(x); ?
+
+Чему равна сумма [ ] + 1 + 2?
+
+Что выведет этот код: alert( "1"[0] )?
+
+Чему равно 2 && 1 && null && 0 && undefined ?
+
+Есть ли разница между выражениями? !!( a && b ) и (a && b)?
+
+Что выведет этот код: alert( null || 2 && 3 || 4 ); ?
+
+a = [1, 2, 3]; b = [1, 2, 3]; Правда ли что a == b ?
+
+Что выведет этот код: alert( +"Infinity" ); ?
+
+Верно ли сравнение: "Ёжик" > "яблоко"?
+
+Чему равно 0 || "" || 2 || undefined || true || falsе ? */
+
+
+
 
 
 
